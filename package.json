@@ -1,0 +1,20 @@
+{
+  "name": "contact-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badzlan/contact-app.git"
+  },
+  "author": "Badzlan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badzlan/contact-app/issues"
+  },
+  "homepage": "https://github.com/badzlan/contact-app#readme"
+}
