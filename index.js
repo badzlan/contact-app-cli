@@ -1,11 +1,29 @@
-import { question, save } from "./contacts.js";
+const contacts = require("./contacts");
+const yargs = require("yargs");
 
-const main = async () => {
-   const nama = await question("Masukkan nama anda : ");
-   const noHP = await question("Masukkan no HP anda : ");
-   const email = await question("Masukkan email anda : ");
+yargs.command({
+   command: "add",
+   describe: "Menambahkan contact baru",
+   builder: {
+      nama: {
+         describe: "Nama Lengkap",
+         demandOption: true,
+         type: 'string',
+      },
+      noHP: {
+         describe: "No Handphone",
+         demandOption: true,
+         type: 'string',
+      },
+      email: {
+         describe: "E-mail",
+         demandOption: true,
+         type: 'string',
+      }
+   },
+   handler(argv) {
+      contacts.save(argv.nama, argv.noHP, argv.email);
+   }
+})
 
-   save(nama, noHP, email);
-};
-
-main();
+yargs.parse()
