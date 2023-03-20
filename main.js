@@ -1,11 +1,11 @@
-const contacts = require("./contacts");
+import { question, save } from "./contacts";
 
 const main = async () => {
-   const nama = await contacts.question("Masukkan nama anda : ");
-   const noHP = await contacts.question("Masukkan no HP anda : ");
-   const email = await contacts.question("Masukkan email anda : ");
+   const nama = await question("Masukkan nama anda : ");
+   const noHP = await question("Masukkan no HP anda : ");
+   const email = await question("Masukkan email anda : ");
 
-   contacts.save(nama, noHP, email);
+   save(nama, noHP, email);
 };
 
 main();
