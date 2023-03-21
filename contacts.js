@@ -20,7 +20,7 @@ const loadContact = () => {
    const file = fs.readFileSync("./data/contacts.json", "utf-8");
    const contacts = JSON.parse(file);
    return contacts;
-}
+};
 
 // Save Contact
 const saveContact = (nama, noHP, email) => {
@@ -29,19 +29,19 @@ const saveContact = (nama, noHP, email) => {
 
    // Duplicate check
    const duplicate = contacts.find((contact) => contact.nama === nama);
-   if(duplicate){
+   if (duplicate) {
       console.log(chalk.red.inverse.bold("Contact sudah terdaftar, gunakan nama lain!"));
       return false;
    }
 
    // email check
-   if(!validator.isEmail(email)){
+   if (!validator.isEmail(email)) {
       console.log(chalk.red.inverse.bold("E-mail tidak valid!"));
       return false;
    }
 
    // noHP check
-   if(!validator.isMobilePhone(noHP, 'id-ID')){
+   if (!validator.isMobilePhone(noHP, "id-ID")) {
       console.log(chalk.red.inverse.bold("Nomor Handphone tidak valid!"));
       return false;
    }
@@ -58,7 +58,7 @@ const listContact = () => {
    const contacts = loadContact();
    console.log(chalk.cyan.inverse.bold("Daftar kontak : "));
    contacts.forEach((contact, i) => {
-      console.log(`${i+1}. ${contact.nama} - ${contact.email} - ${contact.noHP}`);
+      console.log(`${i + 1}. ${contact.nama} - ${contact.email} - ${contact.noHP}`);
    });
 };
 
@@ -66,11 +66,9 @@ const listContact = () => {
 const detailContact = (nama) => {
    const contacts = loadContact();
 
-   const contact = contacts.find(
-      (contact) => contact.nama.toLowerCase() === nama.toLowerCase()
-   );
+   const contact = contacts.find((contact) => contact.nama.toLowerCase() === nama.toLowerCase());
 
-   if(!contact){
+   if (!contact) {
       console.log(chalk.red.inverse.bold(`${nama} tidak ditemukan!`));
       return false;
    }
@@ -81,10 +79,19 @@ const detailContact = (nama) => {
 };
 
 // Delete Contact
-const deleteContact = () => {
+const deleteContact = (nama) => {
    const contacts = loadContact();
 
-   
-}
+   const contact = contacts.filter((contact) => contact.nama.toLowerCase() !== nama.toLowerCase());
+
+   if (contacts.length === contact.length) {
+      console.log(chalk.red.inverse.bold(`${nama} tidak ditemukan!`));
+      return false;
+   }
+
+   fs.writeFileSync("./data/contacts.json", JSON.stringify(contact));
+
+   console.log(chalk.green.inverse.bold(`${nama} berhasil dihapus!`));
+};
 
 module.exports = { saveContact, listContact, detailContact, deleteContact };
