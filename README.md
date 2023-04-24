@@ -1,4 +1,4 @@
-<p align="center"><a href="https://js.org/" target="_blank"><img src="https://github.com/badzlan/contact-app-cli/blob/main/nodejs.png" width="400" alt="JavaScript Logo"></a></p>
+<p align="center"><a href="https://nodejs.org/" target="_blank"><img src="https://github.com/badzlan/contact-app-cli/blob/main/nodejs.png" width="400" alt="JavaScript Logo"></a></p>
 
 # Project Overview
 Contact App CLI (Command Line Interface) using NodeJs
