@@ -28,6 +28,11 @@ cd contact-app-cli
 ```
 npm install
 ```
-## Authors
 
+#### 4. Run the <i>index.js</i> file
+```
+node index.js <command>
+```
+
+## Authors
 - [@badzlan](https://github.com/badzlan)
