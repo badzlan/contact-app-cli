@@ -31,8 +31,16 @@ npm install
 
 #### 4. Run the <i>index.js</i> file
 ```
-node index.js <command>
+node index.js <command> <option>
 ```
+
+## Command Usage
+| Commands | Description                 | Options                                                                                                    |
+| :------- | :-------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| `add`    | Add a new contact           | **--nama**. [required] [string] <br> **--noHP**. [required] [string] <br> **--email**. [required] [string] |
+| `list`   | Show all contact list       | **No need options**                                                                                        |
+| `detail` | Show contact detail by name | **--nama**. [required] [string]                                                                            |
+| `delete` | Delete contact by name      | **--nama**. [required] [string]                                                                            |
 
 ## Authors
 - [@badzlan](https://github.com/badzlan)
