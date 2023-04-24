@@ -13,7 +13,7 @@ Technology :
 ## Step by step installation
 #### 1. Clone this repository
 ```
-git clone https://github.com/badzlan/tebak-angka.git
+git clone https://github.com/badzlan/contact-app-cli.git
 ```
 or 
 #### Download the zip file
@@ -21,7 +21,7 @@ or
 
 #### 2. Go to directory 
 ```
-cd tebak-angka
+cd contact-app-cli
 ```
 
 #### 3. Run the <i>index.js</i> file
