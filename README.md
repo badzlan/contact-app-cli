@@ -24,11 +24,10 @@ or
 cd contact-app-cli
 ```
 
-#### 3. Run the <i>index.js</i> file
+#### 3. Install dependency with npm
 ```
-node index.js
+npm install
 ```
-
 ## Authors
 
 - [@badzlan](https://github.com/badzlan)
