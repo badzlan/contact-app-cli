@@ -6,6 +6,10 @@ Contact App CLI (Command Line Interface) using NodeJs
 Technology :
 - [NodeJs](https://nodejs.org/).
 
+## Prerequisite
+- Already install [nodejs](https://nodejs.org/).
+- Already install [npm](https://www.npmjs.com/).
+
 ## Step by step installation
 #### 1. Clone this repository
 ```
