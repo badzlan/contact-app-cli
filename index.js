@@ -28,7 +28,7 @@ yargs.command({
 
 yargs.command({
    command: "list",
-   describe: "Menambahkan semua list contact",
+   describe: "Menampilkan semua list contact",
    handler() {
       contacts.listContact();
    },
