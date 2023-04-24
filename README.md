@@ -1,7 +1,7 @@
-<p align="center"><a href="https://js.org/" target="_blank"><img src="https://github.com/badzlan/introduction-web/blob/main/javascript.png" width="400" alt="JavaScript Logo"></a></p>
+<p align="center"><a href="https://js.org/" target="_blank"><img src="https://github.com/badzlan/contact-app-cli/blob/main/nodejs.png" width="400" alt="JavaScript Logo"></a></p>
 
 # Project Overview
-Contact App CLI using NodeJs
+Contact App CLI (Command Line Interface) using NodeJs
 
 Technology :
 - [NodeJs](https://nodejs.org/).
